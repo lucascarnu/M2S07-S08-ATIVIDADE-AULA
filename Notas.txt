@@ -1,0 +1,30 @@
+  No index.html:
+
+  <body>
+    <!-- componente app-root que faz a troca de paginas -->
+    <app-root></app-root>
+  </body>
+
+  /*******************/
+
+No app.component.html:
+
+<router-outlet></router-outlet>
+
+/**********************/
+
+Passo a passo criação de um componente (exemplo: home):
+
+1. No terminal:
+
+  ng g c home      ou
+  ng generate component home
+
+2. No app.routes.ts
+
+export const routes: Routes = [
+  {
+    path: 'home',  // ou qualquer nome. Até pode ser vazio
+    component: HomeComponent,
+  },
+];
