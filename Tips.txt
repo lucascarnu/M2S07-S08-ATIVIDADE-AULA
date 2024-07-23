@@ -1,0 +1,5 @@
+para inspeccionar F12
+para debuggar:
+ir a Sources y luego ctl+p y buscar el archivo de interés
+si uso ctrl+shift+f sirve para buscar un texto en todo el código
+

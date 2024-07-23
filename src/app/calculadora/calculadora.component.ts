@@ -8,4 +8,18 @@ import { RouterModule } from '@angular/router';
   templateUrl: './calculadora.component.html',
   styleUrl: './calculadora.component.scss',
 })
-export class CalculadoraComponent {}
+export class CalculadoraComponent {
+  expressao: string = '';
+
+  tratarSelecao(param: string) {
+    this.expressao += param;
+  }
+
+  calcularResultado() {
+    this.expressao = eval(this.expressao);
+  }
+
+  limpar() {
+    this.expressao = '';
+  }
+}
